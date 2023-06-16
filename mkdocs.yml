@@ -1,0 +1,9 @@
+site_name: Tiktok Video Generator
+plugins:
+    - mkdocs-video
+theme:
+    name: readthedocs
+nav:
+    - Home: 'index.md'
+    - 'User Guide':
+        - 'Getting started': 'user-guide/getting-started.md'
