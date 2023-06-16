@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "videogen"
+version = "1.0.0"
+description = "Cupcut templating made ridiculously hard but fun!"
+authors = ["Stepan Nazarov <x0nand@proton.me>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+moviepy = "^1.0.3"
+click = "^8.1.3"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+mypy = "^1.3.0"
+pylint = "^2.17.4"
+
+
+[tool.poetry.group.docs.dependencies]
+mkdocs = "^1.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
