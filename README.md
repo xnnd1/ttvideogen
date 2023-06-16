@@ -14,7 +14,7 @@
 
 ## How to start?🤔
 
-Please refer to [Getting started](docs/user-guide/getting-started.md) page to get started
+Please refer to [documentation](https://xnnd1.github.io/ttvideogen/user-guide/getting-started/)
 
 ## License
 
