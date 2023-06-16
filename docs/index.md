@@ -8,7 +8,7 @@
 
 ## Installation
 
-1. Clone this repository
+1. Clone this [repository](https://github.com/xnnd1/ttvideogen)
 2. Install requirements (```pip install -r requirements.txt```)
 3. Done!
 
