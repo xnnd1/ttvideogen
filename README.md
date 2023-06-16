@@ -1,4 +1,5 @@
 # Welcome to tiktokvideogen documentation🎉️
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/xnnd1/ttvideogen/main.svg)](https://results.pre-commit.ci/latest/github/xnnd1/ttvideogen/main)
 
 ## Requirements
 
