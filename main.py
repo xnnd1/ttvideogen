@@ -6,10 +6,18 @@ from src import video_creation
 @click.option(
     '-bg', '--background', 'bg_path', multiple=True, required=True, help='Path to background videos'
 )
-@click.option('-ol', '--overlay', 'overlay_path', required=True, help='Path to overlay video')
-@click.option('-o', '--output', 'output_path', required=True, help='Path to output video')
-@click.option('-l', '--length', 'video_length', default=180, help='Video length')
-@click.option('-oc', '--opacity', 'opacity', default=0.75, help='Opacity level')
+@click.option(
+    '-ol', '--overlay', 'overlay_path', required=True, help='Path to overlay video'
+)
+@click.option(
+    '-o', '--output', 'output_path', required=True, help='Path to output video'
+)
+@click.option(
+    '-l', '--length', 'video_length', default=180, help='Video length'
+)
+@click.option(
+    '-oc', '--opacity', 'opacity', default=0.75, help='Opacity level'
+)
 @click.option(
     '-tds', '--threads', 'thread_count', default=4, help='Number of threads used for rendering'
 )
