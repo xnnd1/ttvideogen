@@ -1,10 +1,7 @@
 # pylint: disable=missing-module-docstring
 from moviepy.editor import VideoFileClip, CompositeVideoClip, vfx, concatenate_videoclips
 
-# Due to stupid development choices of moviepy first element of this set is
-# actually height, not width, and second element is obviously width. And we come
-# to conclusion that this is 1080x1920 resolution.
-# NOTE: Actually moviepy did use normal width and heigth arguments somewhere
+# First element is height, second is width
 resolution = (1920, 1080)
 
 def make_video(
