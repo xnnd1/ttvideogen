@@ -161,3 +161,9 @@ cython_debug/
 
 # VS Code
 .vscode
+
+#Data and other local things
+*.mp4
+*.webm
+*.m4a
+data/
