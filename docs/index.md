@@ -1,4 +1,4 @@
-# Welcome to tiktokvideogen documentation🎉️
+# Tiktok Video Generator🎥
 
 ## Requirements
 
@@ -14,8 +14,8 @@
 
 ## How to start?🤔
 
-Please refer to [Getting started](docs/user-guide/getting-started.md) page to get started
+Please refer to [Getting started](user-guide/getting-started.md) page to get started
 
 ## License
 
-See [LICENSE](LICENSE) file
+See LICENSE in the [repository](https://github.com/xnnd1/ttvideogen)

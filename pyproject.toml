@@ -4,6 +4,7 @@ version = "1.0.0"
 description = "Cupcut templating made ridiculously hard but fun!"
 authors = ["Stepan Nazarov <x0nand@proton.me>"]
 readme = "README.md"
+license = "GPL-3.0-only"
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -19,6 +20,7 @@ pylint = "^2.17.4"
 
 [tool.poetry.group.docs.dependencies]
 mkdocs = "^1.4.3"
+mkdocs-video = "^1.5.0"
 
 [build-system]
 requires = ["poetry-core"]
