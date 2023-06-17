@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "videogen"
 version = "1.0.0"
-description = "Cupcut templating made ridiculously hard but fun!"
+description = "Create dopamine addictive videos with ease! "
 authors = ["Stepan Nazarov <x0nand@proton.me>"]
 readme = "README.md"
 license = "GPL-3.0-only"
