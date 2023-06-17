@@ -19,8 +19,15 @@ def make_video(
     thread_count: int,
 ) -> None:
     """
-    Basically cupcut template for tech savvy tiktok algorithm abusers like me :)
-    Read comments to understand what it does.
+    Make video based on background videos and overlay video.
+
+    :param bg_path: list: List of paths to background videos.
+    :param overlay_path: str: Path to overlay video.
+    :param output_path: str: Output video path.
+    :param video_length: int: Output video length in seconds.
+    :param opacity: int: Overlay video opacity
+    :param thread_count: int: Threads used for rendering video.
+
     """
     # Empty list of background video clips' paths
     bg_clips_paths = []
@@ -35,20 +42,24 @@ def make_video(
 
     # Make one big videoclip of all background videoclips
     # stored in list, and loop&cut it to video length
-    bg_clips = concatenate_videoclips(bg_clips_paths)
-    bg_clips = bg_clips.fx(vfx.loop, duration=video_length)  # pylint: disable=no-member
-    bg_clips = bg_clips.subclip(0, video_length)
+    bg_clips = (
+        concatenate_videoclips(bg_clips_paths)
+        .fx(vfx.loop, duration=video_length)
+        .subclip(0, video_length)
+    )
 
     # Set overlay videoclip opacity to given opacity,
     # resize it to normal width, and center it
-    overlay_clip = overlay_clip.set_opacity(opacity)
-    overlay_clip = overlay_clip.fx(vfx.resize, width=1080)  # pylint: disable=no-member
-    overlay_clip = overlay_clip.set_position(("center", 327))
+    overlay_clip = (
+        overlay_clip.set_opacity(opacity)
+        .fx(vfx.resize, width=resolution[1])
+        .set_position(("center", 327))
+    )
 
     # Make composition of background clips and overlay clip, and cut it to video length
     video = CompositeVideoClip([bg_clips, overlay_clip]).subclip(0, video_length)
 
-    # Write composition to output path with 60 FPS, 4 threads and blah blah blah no one cares lmfao
+    # Write composition to output path
     video.write_videofile(
         output_path,
         fps=60,

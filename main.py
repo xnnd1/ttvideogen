@@ -36,7 +36,7 @@ def parse_cmd(
     thread_count: int,
 ) -> None:
     """
-    Parse command-line arguments and start video creation
+        Parse command-line arguments and start video creation
     """
     video_creation.make_video(
         bg_path, overlay_path, output_path, video_length, opacity, thread_count
