@@ -44,4 +44,4 @@ def parse_cmd(
 
 
 if __name__ == "__main__":
-    parse_cmd()  # pylint: disable=no-value-for-parameter
+    parse_cmd()
