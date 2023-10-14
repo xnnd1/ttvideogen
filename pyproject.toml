@@ -2,7 +2,7 @@
 name = "videogen"
 version = "1.0.0"
 description = "Create dopamine addictive videos with ease! "
-authors = ["Stepan Nazarov <x0nand@proton.me>"]
+authors = ["<x0nand@proton.me>"]
 readme = "README.md"
 license = "GPL-3.0-only"
 
